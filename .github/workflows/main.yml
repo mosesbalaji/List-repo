@@ -31,3 +31,6 @@ jobs:
         with:
           token: ${{ secrets.OCTODEMO_TEMP_TOKEN }}
           organization: ${{ github.event.inputs.organization }}
+      - name: Results
+        run: |
+          echo "repos - ${{ steps.analyze_org.outputs.repos }}"
