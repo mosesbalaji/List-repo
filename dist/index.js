@@ -13074,6 +13074,7 @@ await io.mkdirP(outputDir)
       console.log(orgsComments)
     
   }
+  core.setOutput('repos', orgsComments);
 }
 })();
 
