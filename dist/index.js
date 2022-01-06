@@ -13066,7 +13066,7 @@ await io.mkdirP(outputDir)
   //***start */
   let organizationlist = organizationinp.split(',');
   let removeMulUserList = [];
-  let jsonfinallist = [];
+  let repos = [];
   let rmvconfrm = 0;
   for(const organization of organizationlist){
     console.log(`Attempting to generate ${organization} - user activity data, this could take some time...`);
